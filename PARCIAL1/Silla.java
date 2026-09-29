@@ -20,6 +20,7 @@ public class Silla {
     public String getId() {
         return "" + Character.toUpperCase(fila) + numero;
     }
-       Override
+
+    @Override
     public String toString() { return getId(); }
 }
