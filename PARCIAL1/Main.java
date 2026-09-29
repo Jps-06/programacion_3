@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         boolean salir = false;
         while (!salir) {
-            System.out.println("\n================ CINEMASTAR ================");
+            System.out.println("CINEMASTAR ");
             System.out.println("1. Menu de creacion de peliculas");
             System.out.println("2. Menu de asignacion de funciones");
             System.out.println("3. Menu de ventas");
