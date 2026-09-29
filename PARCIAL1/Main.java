@@ -144,7 +144,7 @@ public class Main {
     }
 
     private static void verCartelera() {
-        System.out.println("\n================ CARTELERA DEL DIA ================");
+        System.out.println("CARTELERA DEL DIA ");
         for (Sala sala : teatro.getSalas()) {
             System.out.println("\nSala " + sala.getId() + (sala.isSolo3D() ? " (solo 3D)" : ""));
             for (int i = 0; i < Sala.FRANJAS.length; i++) {
@@ -159,7 +159,7 @@ public class Main {
     private static void menuVentas() {
         boolean volver = false;
         while (!volver) {
-            System.out.println("\n---- Modulo de Ventas ----");
+            System.out.println(" Modulo de Ventas ");
             int salaId = pedirSala();
             int franjaIdx = pedirFranja();
 
@@ -191,7 +191,7 @@ public class Main {
 
         Teatro.ResultadoCompra resultado = teatro.comprarSillas(sala, funcion, idsSillas);
 
-        System.out.println("\n---- Resultado de la compra ----");
+        System.out.println(" Resultado de la compra ");
         for (int i = 0; i < resultado.totalMensajes; i++) {
             System.out.println(resultado.mensajes[i]);
         }
